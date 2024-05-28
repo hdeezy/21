@@ -310,7 +310,7 @@ function updateGui() {
     for (let card of game.dealerHand.cards) {
       const cardDiv = document.createElement("ins");
       cardDiv.className = "card";
-      cardDiv.textContent = id2unicode[card.id];
+      cardDiv.textContent = replaceSuits(card.id);
       dealerHand.appendChild(cardDiv);
     }
     document.getElementById("dealerScore").innerText = game.dealerHand.value;
@@ -322,7 +322,7 @@ function updateGui() {
     for (let card of game.playerHand.cards) {
       let cardDiv = document.createElement("ins");
       cardDiv.className = "card";
-      cardDiv.textContent = id2unicode[card.id];
+      cardDiv.textContent = replaceSuits(card.id);
       playerHand.appendChild(cardDiv);
     }
     document.getElementById("playerScore").innerText = game.playerHand.value;
