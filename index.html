@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="21.css" />
+    <title>21</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, user-scalable=0"
+    />
+  </head>
+  <body>
+    <div id="gameContainer">
+      <div class="row">
+        <h1>21</h1>
+        <div id="message" class="message"></div>
+        <div id="winBoard">
+          <div class="scoreRow">
+            <div id="playerWins" class="wins">0 Wins</div>
+          </div>
+          <div class="scoreRow">
+            <div id="dealerWins" class="wins">0 Losses</div>
+          </div>
+        </div>
+      </div>
+      <div id="middleRow" class="row">
+        <ins id="deckSize">52 cards left in the deck</ins>
+      </div>
+      <div id="view">
+        <div id="dealerSide" class="side">
+          <div id="dealerScoreBox" class="scoreBox">
+            Dealer<ins id="dealerScore" class="score"></ins>
+          </div>
+          <div id="dealerHand" class="hand"></div>
+        </div>
+
+        <div id="playerSide" class="side">
+          <div id="playerScoreBox" class="scoreBox">
+            You<ins id="playerScore" class="score"></ins>
+          </div>
+          <div id="playerHand" class="hand"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div id="controls"></div>
+        <h1 id="bottom21">21</h1>
+      </div>
+    </div>
+    <script src="21.js" defer></script>
+  </body>
+</html>
